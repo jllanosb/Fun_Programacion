@@ -6,6 +6,16 @@
 
 
 
+# numero decimal
+precio = 19.99
+
+
+
+
+
+
+
+
 
 
 
