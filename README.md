@@ -25,6 +25,10 @@ Fecha. 29.08.2026
 
 ### Colaboradores
 
+
+
+
+Juan Vasquez
 Elvis Jambo
 
 
