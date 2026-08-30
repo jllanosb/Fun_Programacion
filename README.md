@@ -28,6 +28,9 @@ Fecha. 29.08.2026
 
 Michael Tejada
 
+
+
+Juan Vasquez
 Elvis Jambo
 
 

@@ -16,6 +16,11 @@ precio = 19.99
 
 
 
+
+
+
+# Valor logico
+estado = False
 # Numero Entero
 edad = 27
 
