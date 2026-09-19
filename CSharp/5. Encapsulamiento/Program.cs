@@ -1,4 +1,4 @@
-﻿Console.WriteLine("-- Encpasulamiento --");
+﻿Console.WriteLine("-- Encapsulamiento --");
 
 // Restringir Acceso a campos o valores
 CtaAhorro cuenta = new CtaAhorro("Jaime", 1500.00m);
@@ -26,4 +26,3 @@ public class CtaAhorro
         Console.WriteLine($"Saldo: {saldo:F2}");
     }
 }
-

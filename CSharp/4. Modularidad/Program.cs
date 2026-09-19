@@ -1,7 +1,5 @@
 ﻿Console.WriteLine("Modularidad");
-
 // modulos --> funcion especifica
-
 // Calcular Productos
 
 static string leer_producto()
