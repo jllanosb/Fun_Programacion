@@ -38,3 +38,81 @@ for i in range(len(Notas)):
 print(Nombres)
 for k in range(len(Nombres)):
     print(f'Elemento {k+1} Valor: {Nombres[k]}')
+
+## Operaciones Insercion, Busqueda, Modificacion y Eliminacion
+
+#--- Insercion ----
+# Final de un arreglo append()
+productos=['Teclado', 'Mouse','Monitor', 'Laptop']
+productos.append("Celular Tactil")
+print(productos)
+
+# Insertar posicion especifica insert
+productos.insert(1, "Iphone")
+print(productos)
+
+# Insertar varios elementos extend()
+productos.extend(['HP', 'TV','Asus', 'Refrigeradora','TV'])
+print(productos)
+
+#--- Busqueda ----
+if 'TV' in productos:
+    posicion = productos.index('TV')
+    print(f'Encontrado en la posicion: {posicion}')
+else:
+    print(f'El elemento TV no se encontrado')
+
+print(productos.index('TV'))
+print(productos.count('TV'))
+
+#--- Modificar elemento ----
+productos[7]='Licuadora'
+print(productos)
+
+for k in range(len(productos)):
+    if productos[k] == 'Refrigeradora':
+        productos[k]= 'Auriculares'
+print(productos)
+
+# Reemplaza por cero a notas menor 11
+print(Notas)
+for i in range(len(Notas)):
+    if Notas[i]<11:
+        Notas[i]=0
+print(Notas)
+
+# Suma + 1 a cada nota ...modificacion masiva
+for i in range(len(Notas)):
+    Notas[i]=Notas[i]+1
+print(Notas)
+
+# Modificacion por segmentos colocar en mayusculas con upper
+productos[1:3]=[producto.upper() for producto in productos[1:3]]
+print(productos)
+
+# modificacion por listas
+precios=[35,80,74,99]
+precios=[precio*0.9 if precio > 70 else precio for precio in precios]
+print(precios)
+
+# ----- Eliminacion -----
+# Eliminar valor
+productos.remove('Licuadora')
+print(productos)
+
+# Eliminar por indice metodo pop()
+eliminado = productos.pop(2)
+print(eliminado)
+print(productos)
+
+# eliminar por segmento (Rango definido)
+del productos[1:3]
+print(productos)
+
+# Eliminacion masiva
+Notas = [x for x in Notas if x > 12]
+print(Notas)
+
+# Vaciar lista
+Notas.clear()
+print(Notas)
