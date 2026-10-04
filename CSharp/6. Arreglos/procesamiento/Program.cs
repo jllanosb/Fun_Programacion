@@ -38,6 +38,7 @@ foreach (int x in numeros2){
     Console.Write($"{x}, ");
 }
 
+Console.WriteLine();
 Console.WriteLine("Metodo Sort");
 int [] numeros3 = {20, 56, 4, 90, 77, 23, 100, 1, 20, 89};
 numeros3.Sort();
