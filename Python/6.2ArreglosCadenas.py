@@ -33,32 +33,47 @@ print("Recorriendo una Cadena")
 for i in range(len(mensaje)):
     print(f'{i} -> {mensaje[i]}')
 
-# EJERCICIO
-"""
-Leer un codigo de estudiante y su carrera
-Formar una etiqueta
-Mostrar la longitud codigo, carrera, etiqueta
-Mostrar primer y ultimo caracter del codigo
-Recorrer cada letra de la carrera
-Crear una etiqueta nueva agregando el semestre sin alterar la original
-"""
-codigo=input("Ingrese su codigo: ")
-carrera=input("ingrese su carrera: ")
+print("Metodos Trabajar con Cadenas")
+# Find
+nombre = "Jaime,Llanos"
+posicion_coma=nombre.find(",")
+print(f'La coma esta en la posicion: {posicion_coma}')
 
-etiqueta = codigo + "|" + carrera
-etiqueta_periodo = etiqueta + "|2026-2"
+# Slicing (extrar subcadena)
+email = "jaime.ll@sistemas.pe"
+posicion_arroba= email.find("@")
+usuario = email[:posicion_arroba] 
+dominio = email[posicion_arroba+1:]
 
-print(etiqueta)
-print(f'Longitud del Codigo: {len(codigo)}')
-print(f'Longitud de la Carrera: {len(carrera)}')
-print(f'Longitud de la Etiqueta: {len(etiqueta)}')
+print(f'Usuario: {usuario}')
+print(f'Dominio: {dominio}')
 
-if len(codigo) > 0:
-    print(f'Primer Caracter {codigo[0]}')
-    print(f'Ultimo caracter {codigo[len(codigo) - 1]}')
+# Split
+nombre_curso = "BigData y Base de Datos Avanzada"
+partes = nombre_curso.split(" ")
+print(partes)
+print(partes[0])
+print(partes[1])
+print(partes[2])
+print(partes[3])
+print(partes[4])
+print(partes[5])
 
-print("Recorriendo la carrera")
-for i in range(len(carrera)):
-    print(f'{i} -> {carrera[i]}')
+# Replace
+telefono = "+51-987-654-321"
+telefono_clean = telefono.replace("-", "")
+print(f"Telefono limpio: {telefono_clean} ")
 
-print(etiqueta_periodo)
+# UPPER poner a mayusculas
+nombre_mayuscula = nombre.upper()
+print(nombre_mayuscula)
+
+# LOWER poner a minusculas
+nombre_minuscula = nombre.lower()
+print(nombre_minuscula)
+
+# Strip (Espacios en blanco innecesarios al inicio y al fin)
+palabra = "    Aprendiendo Python        "
+palabra_limpia = palabra.strip()
+
+print(f'{palabra_limpia}')
