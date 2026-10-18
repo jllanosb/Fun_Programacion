@@ -58,3 +58,25 @@ for i in range(1,len(nombres4)):
 
 print(nombres4)
 
+# PDF 4.4 Busqueda
+"""
+Crear un arreglo o los necesarios y desarrollar los metodos de busqueda
+"""
+ print("Busqueda en Cadenas")
+# Busqueda Textual - Contains"
+
+# Busqueda Exacta - Equals
+
+# Busqueda Sensible a Mayusculas y Minusculas
+
+# Busqueda Subcadenas
+
+# Busqueda Expresion Regula
+
+# Busqueda Primera posicion
+
+# Busqueda Ultima posicion
+
+# Busqueda empieza texto especifico - startswith
+
+# Busqueda termina texto especifico - endswith
