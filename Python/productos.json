@@ -1,0 +1,23 @@
+[
+    {
+        "Codigo": "P001",
+        "Nombre": "Laptop",
+        "Categoria": "Tecnologia",
+        "Precio": 2500.0,
+        "Stock": 20
+    },
+    {
+        "Codigo": "P002",
+        "Nombre": "Mouse",
+        "Categoria": "Accesorios",
+        "Precio": 75.0,
+        "Stock": 40
+    },
+    {
+        "Codigo": "P003",
+        "Nombre": "Router",
+        "Categoria": "Comunicaciones",
+        "Precio": 200.0,
+        "Stock": 10
+    }
+]
